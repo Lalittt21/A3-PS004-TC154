@@ -26,9 +26,26 @@ rule restricted to the board were updated for the current LAN.
 Structured evidence: results/esp32-smoke-tests.json. Raw serial logs remain
 local in results/esp32-hardware.log. These observations are not benchmarks.
 
-Still pending: wrong-CA/wrong-hostname tests on the physical board, repeated
-Wi-Fi and gateway failure/recovery tests, and controlled performance measurements.
-Equivalent negative certificate checks currently pass on the Python client.
+## Physical-board certificate checks
+
+The board rejected both a self-signed certificate with the correct gateway name
+and a trusted-CA certificate with the wrong hostname. The first produced two
+explicit certificate verification errors; the second produced one. Neither
+fixture produced an accepted DNS answer. The Python control confirmed the
+intended certificate error in each case. After restoring the genuine gateway,
+the same board accepted a valid answer without resetting or reflashing.
+
+Evidence: `results/esp32-certificate-tests.json`. This was controlled server
+certificate substitution, not an on-network interception attack.
+
+Intermittent connection timeouts occurred with both genuine and test gateways.
+They were recorded separately and do not count as certificate rejection evidence.
+An initial recorder encoding error was fixed; another baseline attempt failed
+with timeouts before the final complete test passed. The timeout cause remains
+unresolved, so reliable repeated operation is not yet demonstrated.
+
+Still pending: diagnose intermittent connection timeouts, repeated Wi-Fi and
+gateway failure/recovery tests, and controlled performance measurements.
 
 Build artifacts under .pio contain configured credentials and are excluded
 from publication. Secure boot, flash encryption and production provisioning

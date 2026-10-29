@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-29T14:19:37.135969+00:00",
+  "board": "ESP32-D0WD-V3",
+  "tests": [
+    {
+      "test": "Genuine gateway baseline",
+      "status": "PASS"
+    },
+    {
+      "test": "untrusted",
+      "status": "PASS",
+      "certificate_control": "self-signed certificate",
+      "tls_blocked_attempts": 5,
+      "certificate_verification_errors": 2,
+      "socket_timeouts": 3
+    },
+    {
+      "test": "wrong-host",
+      "status": "PASS",
+      "certificate_control": "Hostname mismatch",
+      "tls_blocked_attempts": 5,
+      "certificate_verification_errors": 1,
+      "socket_timeouts": 3
+    },
+    {
+      "test": "Genuine gateway restored without board reset",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Intermittent socket timeouts occurred, including with the genuine gateway; their cause remains unresolved.",
+    "Timeouts are not counted as certificate-verification evidence.",
+    "Controlled lab certificate substitution; not an on-network interception attack.",
+    "No firmware changes or board reset between negative tests and recovery."
+  ]
+}

@@ -20,10 +20,10 @@
         "192.0.2.10"
       ],
       "answers": [
-        "sensor.trustgate.test. 56 IN A 192.0.2.10",
-        "sensor.trustgate.test. 56 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
+        "sensor.trustgate.test. 8 IN A 192.0.2.10",
+        "sensor.trustgate.test. 8 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
       ],
-      "latency_ms": 122.85,
+      "latency_ms": 90.928,
       "transport": "TLS with CA and hostname verification"
     }
   },
@@ -38,7 +38,7 @@
       "decision": "blocked: answer not DNSSEC-authenticated",
       "addresses": [],
       "answers": [],
-      "latency_ms": 4.46,
+      "latency_ms": 2.692,
       "transport": "TLS with CA and hostname verification"
     }
   },
@@ -53,7 +53,7 @@
       "decision": "blocked: resolver failure (consult gateway logs for cause)",
       "addresses": [],
       "answers": [],
-      "latency_ms": 2.168,
+      "latency_ms": 2.803,
       "transport": "TLS with CA and hostname verification"
     }
   },
@@ -68,7 +68,7 @@
       "decision": "authenticated: name does not exist",
       "addresses": [],
       "answers": [],
-      "latency_ms": 43.542,
+      "latency_ms": 38.235,
       "transport": "TLS with CA and hostname verification"
     }
   },

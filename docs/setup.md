@@ -54,8 +54,32 @@ contain Wi-Fi credentials and must remain local. `scripts/monitor-board.py`
 uses Windows pyserial, COM8 and 115200 baud; adjust the port if needed.
 It provisions the clock over USB and records the serial output locally.
 
+## Physical-board certificate tests
+
+With the genuine gateway running, the board connected and other serial monitors
+closed, run this in Windows PowerShell:
+
+```powershell
+python -m pip install pyserial
+python scripts/test-board-certificates.py
+```
+
+The test first checks the genuine gateway, then temporarily presents a
+self-signed certificate with the correct hostname, followed by a certificate
+signed by the trusted lab CA with the wrong hostname. A Python control verifies
+each intended certificate error, while serial output must show an explicit ESP32
+certificate verification failure, repeated blocked attempts and no accepted
+answers. Socket timeouts are counted separately. A finally block
+restores the original TLS configuration and gateway. The final phase checks
+that the same board accepts the genuine gateway again without resetting it.
+
+The test temporarily interrupts the lab service. If the test process or machine
+is forcibly terminated, regenerate the genuine configuration using
+`bash scripts/prepare-tls.sh` and restart the lab. Keep raw logs local; the
+structured result is written only after all phases pass.
+
 ## Remaining work
 
-Hardware negative-certificate tests, repeated failure/recovery testing,
+Repeated failure/recovery testing, intermittent timeout diagnosis,
 controlled performance benchmarks and production provisioning remain separate
 tasks. Single-query serial timings are diagnostic observations, not benchmarks.

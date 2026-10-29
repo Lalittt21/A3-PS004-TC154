@@ -3,7 +3,7 @@
     "test": "Unavailable gateway refuses connection",
     "status": "PASS",
     "exit_code": 1,
-    "elapsed_seconds": 1.144,
+    "elapsed_seconds": 0.863,
     "detail": {
       "accepted": false,
       "decision": "blocked: connection failed",
@@ -14,7 +14,7 @@
     "test": "Stalled TLS handshake times out",
     "status": "PASS",
     "exit_code": 1,
-    "elapsed_seconds": 1.602,
+    "elapsed_seconds": 1.363,
     "detail": {
       "accepted": false,
       "decision": "blocked: connection failed",
@@ -25,7 +25,7 @@
     "test": "Wrong identity blocks without plaintext fallback",
     "status": "PASS",
     "exit_code": 1,
-    "elapsed_seconds": 0.735,
+    "elapsed_seconds": 0.853,
     "detail": {
       "accepted": false,
       "decision": "blocked: connection failed",
@@ -36,7 +36,7 @@
     "test": "Unsigned domain blocked at CLI",
     "status": "PASS",
     "exit_code": 2,
-    "elapsed_seconds": 1.199,
+    "elapsed_seconds": 0.948,
     "detail": {
       "name": "sensor.unsigned.trustgate.test",
       "rcode": "NOERROR",
@@ -45,7 +45,7 @@
       "decision": "blocked: answer not DNSSEC-authenticated",
       "addresses": [],
       "answers": [],
-      "latency_ms": 71.654,
+      "latency_ms": 37.396,
       "transport": "TLS with CA and hostname verification"
     }
   },
@@ -53,7 +53,7 @@
     "test": "Tampered domain blocked at CLI",
     "status": "PASS",
     "exit_code": 2,
-    "elapsed_seconds": 0.88,
+    "elapsed_seconds": 0.873,
     "detail": {
       "name": "tampered.trustgate.test",
       "rcode": "SERVFAIL",
@@ -62,7 +62,7 @@
       "decision": "blocked: resolver failure (consult gateway logs for cause)",
       "addresses": [],
       "answers": [],
-      "latency_ms": 6.313,
+      "latency_ms": 6.276,
       "transport": "TLS with CA and hostname verification"
     }
   },
@@ -70,7 +70,7 @@
     "test": "Invalid timeout rejected",
     "status": "PASS",
     "exit_code": 1,
-    "elapsed_seconds": 1.306,
+    "elapsed_seconds": 0.903,
     "detail": {
       "accepted": false,
       "decision": "blocked: connection failed",
@@ -81,7 +81,7 @@
     "test": "Fresh request succeeds after failed requests",
     "status": "PASS",
     "exit_code": 0,
-    "elapsed_seconds": 1.4,
+    "elapsed_seconds": 0.766,
     "detail": {
       "name": "sensor.trustgate.test",
       "rcode": "NOERROR",
@@ -92,10 +92,10 @@
         "192.0.2.10"
       ],
       "answers": [
-        "sensor.trustgate.test. 47 IN A 192.0.2.10",
-        "sensor.trustgate.test. 47 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
+        "sensor.trustgate.test. 1 IN A 192.0.2.10",
+        "sensor.trustgate.test. 1 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
       ],
-      "latency_ms": 136.406,
+      "latency_ms": 71.943,
       "transport": "TLS with CA and hostname verification"
     }
   }
