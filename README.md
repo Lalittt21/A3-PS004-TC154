@@ -30,6 +30,7 @@ Python client, ESP32 firmware and automated security checks.
 - [Lab architecture and security limits](docs/local-lab.md)
 - [ESP32 configuration and build](client/esp32/README.md)
 - [Hardware test status](docs/hardware-status.md)
+- [Reliability tests and initial measurements](docs/reliability-and-measurements.md)
 
 The software suite passes 26 checks covering DNSSEC validation, strict client
 policy, TLS certificate verification, TLS 1.2/1.3 compatibility and failure handling.

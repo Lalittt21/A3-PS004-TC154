@@ -15,6 +15,7 @@ static uint8_t packet[2048];
 static bool clockReady = false;
 static uint32_t lastAttempt = 0;
 static unsigned scenario = 0;
+static bool automaticQueries = true;
 static const char *names[] = {"sensor.trustgate.test", "sensor.unsigned.trustgate.test", "tampered.trustgate.test", "missing.trustgate.test"};
 static uint16_t u16(const uint8_t *p) { return (uint16_t(p[0]) << 8) | p[1]; }
 
@@ -51,7 +52,12 @@ static void evaluate(size_t size, uint16_t id, const char *query) {
   }
   pos += 4;
   unsigned rcode = packet[3] & 15;
-  if (rcode) { Serial.printf("BLOCK DNS rcode=%u (SERVFAIL alone does not identify cause)\n", rcode); return; }
+  if (rcode) {
+    Serial.printf("BLOCK DNS rcode=%u%s\n", rcode,
+      rcode == 2 ? " (SERVFAIL alone does not identify cause)" :
+      rcode == 3 ? " (NXDOMAIN: name does not exist)" : "");
+    return;
+  }
   if (!(packet[3] & 0x20)) { Serial.println("BLOCK no authenticated-data flag"); return; }
   uint16_t count = u16(packet + 6); bool found = false; uint8_t ip[4] = {};
   for (unsigned i = 0; i < count; i++) {
@@ -93,8 +99,12 @@ static void queryDNS(const char *name) {
   if (!tls) { Serial.println("BLOCK no TLS memory"); return; }
   if (esp_tls_conn_new_sync(TG_GATEWAY_IP, strlen(TG_GATEWAY_IP), TG_GATEWAY_PORT, &cfg, tls) != 1) {
     Serial.println("BLOCK TLS connection or certificate failure; no fallback");
+    Serial.printf("FAIL_METRIC elapsed_ms=%lu rssi=%d sleep=%d free_heap=%u\n",
+      (unsigned long)(millis()-start), WiFi.RSSI(), (int)WiFi.getSleep(), ESP.getFreeHeap());
     esp_tls_conn_destroy(tls); return;
   }
+  Serial.printf("TLS authenticated connect_ms=%lu rssi=%d sleep=%d\n",
+    (unsigned long)(millis()-start), WiFi.RSSI(), (int)WiFi.getSleep());
   uint16_t id = esp_random() & 0xffff;
   memset(packet, 0, 12); packet[0] = id >> 8; packet[1] = id; packet[2] = 1;
   packet[3] = 0x20; packet[5] = 1; // RD + AD request; CD is never set.
@@ -131,6 +141,21 @@ void loop() {
   wasConnected = connected;
   if (Serial.available()) {
     String line = Serial.readStringUntil('\n'); line.trim();
+    if (line == "MODE manual") { automaticQueries = false; Serial.println("MODE manual"); }
+    else if (line == "MODE demo") { automaticQueries = true; Serial.println("MODE demo"); }
+    else if (line == "SLEEP 0" || line == "SLEEP 1") {
+      bool ok = WiFi.setSleep(line == "SLEEP 1");
+      Serial.printf("SLEEP result=%d mode=%d\n", ok, (int)WiFi.getSleep());
+    }
+    else if (line == "RECONNECT") {
+      Serial.println("WIFI requested reconnect"); WiFi.reconnect();
+    }
+    else if (line == "QUERY") {
+      if (clockReady && WiFi.status() == WL_CONNECTED) {
+        Serial.printf("QUERY %s\n", names[0]); queryDNS(names[0]);
+      } else Serial.println("BLOCK Wi-Fi or clock not ready");
+      Serial.println("QUERY_DONE");
+    }
     if (line.startsWith("TIME ")) {
       const char *input = line.c_str() + 5; char *end;
       long long epoch = strtoll(input, &end, 10);
@@ -140,7 +165,7 @@ void loop() {
       } else Serial.println("Invalid TIME value");
     }
   }
-  if (clockReady && WiFi.status() == WL_CONNECTED && millis() - lastAttempt >= 10000) {
+  if (automaticQueries && clockReady && WiFi.status() == WL_CONNECTED && millis() - lastAttempt >= 10000) {
     lastAttempt = millis(); const char *name = names[scenario++ % 4];
     Serial.printf("QUERY %s\n", name); queryDNS(name);
   }

@@ -44,8 +44,18 @@ An initial recorder encoding error was fixed; another baseline attempt failed
 with timeouts before the final complete test passed. The timeout cause remains
 unresolved, so reliable repeated operation is not yet demonstrated.
 
-Still pending: diagnose intermittent connection timeouts, repeated Wi-Fi and
-gateway failure/recovery tests, and controlled performance measurements.
+## Recovery and measurements
+
+Two gateway restart cycles and two client-requested Wi-Fi reconnect cycles now
+pass on the board with modem sleep disabled. All 48 measured rapid queries
+passed after warm-up. See [measurement methods and limits](reliability-and-measurements.md)
+for results, including startup failures excluded from those 48 samples.
+
+A DHCP address change caused a stale firewall rule, which was corrected.
+Intermittent failures are not fully resolved: the spaced-query follow-up had
+one incomplete response with modem sleep enabled. Further controlled-network
+diagnosis and longer reliability testing remain necessary. Initial latency
+measurements do not demonstrate CPU or energy savings.
 
 Build artifacts under .pio contain configured credentials and are excluded
 from publication. Secure boot, flash encryption and production provisioning

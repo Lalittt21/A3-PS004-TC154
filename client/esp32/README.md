@@ -37,6 +37,19 @@ seconds. Expect ACCEPT for sensor.trustgate.test and BLOCK for unsigned, tampere
 and missing names. NXDOMAIN is a legitimate negative response, not an attack.
 It logs elapsed query time and heap statistics, not measured energy consumption.
 
+USB diagnostic commands: `MODE manual` pauses periodic queries, `QUERY` requests
+the fixed valid fixture, `MODE demo` resumes the four-name cycle, `SLEEP 0`/`SLEEP 1`
+disable/enable modem power saving, and `RECONNECT` requests Wi-Fi reconnection.
+These do not bypass certificate or DNS policy checks. Commands are for the trusted
+USB operator. Power settings are temporary; reboot restores the framework default.
+The library reports result=0 when the requested sleep setting was already active;
+inspect the reported mode. Disabling sleep may increase energy consumption.
+
+Failed connection timings are now logged as FAIL_METRIC. Its heap reading is
+before TLS cleanup, while successful METRIC is after cleanup; do not compare
+these as evidence of a leak. A 3000ms connection setting is not a total-query
+deadline: connection phases and DNS reads can make total elapsed time longer.
+
 ## Security and limits
 The gateway IP is provisioned separately from the certificate hostname. ESP-TLS
 checks the embedded CA, hostname and certificate dates. No plaintext fallback or

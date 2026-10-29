@@ -1,0 +1,158 @@
+{
+  "recorded_at": "2026-10-29T14:41:29.684368+00:00",
+  "method": "6 queries per phase, alternating sleep on/off 1 times; 10.0s pause; new TLS 1.2 connection per query; connection timeout setting 3000ms (not a total-query deadline); existing gateway cache not flushed",
+  "limits": [
+    "Measured phases start only after first accepted warm-up query. Startup failures are excluded and may occur.",
+    "Laptop control measures TLS only and does not traverse the ESP32 Wi-Fi link.",
+    "No energy or client-side DNSSEC baseline; no offloading-savings claim.",
+    "Software verification briefly ran during this follow-up; timings are diagnostic, not a controlled comparison."
+  ],
+  "phases": [
+    {
+      "sleep": 1,
+      "summary": {
+        "attempts": 6,
+        "accepted": 5,
+        "failed": 1,
+        "median_success_ms": 1217,
+        "min_success_ms": 1039,
+        "max_success_ms": 1547
+      },
+      "queries": [
+        {
+          "number": 1,
+          "accepted": true,
+          "elapsed_ms": 1198,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 22.03
+          }
+        },
+        {
+          "number": 2,
+          "accepted": false,
+          "elapsed_ms": 7227,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 11.44
+          }
+        },
+        {
+          "number": 3,
+          "accepted": true,
+          "elapsed_ms": 1333,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 32.8
+          }
+        },
+        {
+          "number": 4,
+          "accepted": true,
+          "elapsed_ms": 1547,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 6.08
+          }
+        },
+        {
+          "number": 5,
+          "accepted": true,
+          "elapsed_ms": 1217,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 5.85
+          }
+        },
+        {
+          "number": 6,
+          "accepted": true,
+          "elapsed_ms": 1039,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 7.84
+          }
+        }
+      ]
+    },
+    {
+      "sleep": 0,
+      "summary": {
+        "attempts": 6,
+        "accepted": 6,
+        "failed": 0,
+        "median_success_ms": 958.5,
+        "min_success_ms": 716,
+        "max_success_ms": 1084
+      },
+      "queries": [
+        {
+          "number": 1,
+          "accepted": true,
+          "elapsed_ms": 821,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 8.22
+          }
+        },
+        {
+          "number": 2,
+          "accepted": true,
+          "elapsed_ms": 999,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 7.21
+          }
+        },
+        {
+          "number": 3,
+          "accepted": true,
+          "elapsed_ms": 918,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 7.7
+          }
+        },
+        {
+          "number": 4,
+          "accepted": true,
+          "elapsed_ms": 1084,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 8.2
+          }
+        },
+        {
+          "number": 5,
+          "accepted": true,
+          "elapsed_ms": 716,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 7.12
+          }
+        },
+        {
+          "number": 6,
+          "accepted": true,
+          "elapsed_ms": 1045,
+          "socket_timeout": false,
+          "laptop_control": {
+            "ok": true,
+            "tls_ms": 7.85
+          }
+        }
+      ]
+    }
+  ]
+}

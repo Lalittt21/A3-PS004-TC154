@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-10-29T14:40:32.279520+00:00",
+  "tests": [
+    {
+      "test": "gateway restart",
+      "cycle": 1,
+      "status": "PASS",
+      "attempts": 1,
+      "observed_recovery_ms": 4016
+    },
+    {
+      "test": "gateway restart",
+      "cycle": 2,
+      "status": "PASS",
+      "attempts": 1,
+      "observed_recovery_ms": 2392
+    },
+    {
+      "test": "client Wi-Fi reconnect",
+      "cycle": 1,
+      "status": "PASS",
+      "attempts": 1,
+      "observed_recovery_ms": 1371
+    },
+    {
+      "test": "client Wi-Fi reconnect",
+      "cycle": 2,
+      "status": "PASS",
+      "attempts": 1,
+      "observed_recovery_ms": 1176
+    }
+  ],
+  "limits": [
+    "Client-requested Wi-Fi reconnect, not access-point power loss.",
+    "Recovery timing includes USB polling and full TLS/DNS query; not link association time.",
+    "Two cycles each, not a long-duration reliability test."
+  ]
+}
