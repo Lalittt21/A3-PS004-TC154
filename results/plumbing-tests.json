@@ -1,0 +1,26 @@
+[
+  {
+    "server": "authoritative",
+    "name": "sensor.trustgate.test",
+    "result": "PASS",
+    "rcode": "NOERROR"
+  },
+  {
+    "server": "authoritative",
+    "name": "missing.trustgate.test",
+    "result": "PASS",
+    "rcode": "NXDOMAIN"
+  },
+  {
+    "server": "gateway",
+    "name": "sensor.trustgate.test",
+    "result": "PASS",
+    "rcode": "NOERROR"
+  },
+  {
+    "server": "gateway",
+    "name": "missing.trustgate.test",
+    "result": "PASS",
+    "rcode": "NXDOMAIN"
+  }
+]

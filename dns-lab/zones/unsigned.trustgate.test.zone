@@ -1,0 +1,6 @@
+$TTL 60
+@ IN SOA ns.trustgate.test. admin.trustgate.test. (
+    2026102301 3600 600 86400 60
+)
+@ IN NS ns.trustgate.test.
+sensor IN A 192.0.2.30

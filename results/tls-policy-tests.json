@@ -1,0 +1,87 @@
+[
+  {
+    "test": "Authenticated TLSv1.2 handshake",
+    "status": "PASS"
+  },
+  {
+    "test": "Authenticated TLSv1.3 handshake",
+    "status": "PASS"
+  },
+  {
+    "test": "sensor.trustgate.test",
+    "status": "PASS",
+    "detail": {
+      "name": "sensor.trustgate.test",
+      "rcode": "NOERROR",
+      "authenticated_data": true,
+      "accepted": true,
+      "decision": "accepted",
+      "addresses": [
+        "192.0.2.10"
+      ],
+      "answers": [
+        "sensor.trustgate.test. 56 IN A 192.0.2.10",
+        "sensor.trustgate.test. 56 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
+      ],
+      "latency_ms": 122.85,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "sensor.unsigned.trustgate.test",
+    "status": "PASS",
+    "detail": {
+      "name": "sensor.unsigned.trustgate.test",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "accepted": false,
+      "decision": "blocked: answer not DNSSEC-authenticated",
+      "addresses": [],
+      "answers": [],
+      "latency_ms": 4.46,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "tampered.trustgate.test",
+    "status": "PASS",
+    "detail": {
+      "name": "tampered.trustgate.test",
+      "rcode": "SERVFAIL",
+      "authenticated_data": false,
+      "accepted": false,
+      "decision": "blocked: resolver failure (consult gateway logs for cause)",
+      "addresses": [],
+      "answers": [],
+      "latency_ms": 2.168,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "missing.trustgate.test",
+    "status": "PASS",
+    "detail": {
+      "name": "missing.trustgate.test",
+      "rcode": "NXDOMAIN",
+      "authenticated_data": true,
+      "accepted": false,
+      "decision": "authenticated: name does not exist",
+      "addresses": [],
+      "answers": [],
+      "latency_ms": 43.542,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "Authenticated absence of DS for unsigned child",
+    "status": "PASS"
+  },
+  {
+    "test": "Wrong gateway hostname",
+    "status": "PASS: certificate rejected"
+  },
+  {
+    "test": "Untrusted CA",
+    "status": "PASS: certificate rejected"
+  }
+]

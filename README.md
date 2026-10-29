@@ -21,6 +21,21 @@ The controlled lab will test valid signed data, an authenticated unsigned delega
 
 The client relies on the trusted gateway. It does not independently perform end-to-end DNSSEC validation. A compromised trusted gateway remains a limitation.
 
+## Prototype code
+
+The repository includes the Unbound gateway configuration, signed-zone lab,
+Python client, ESP32 firmware and automated security checks.
+
+- [Setup instructions](docs/setup.md)
+- [Lab architecture and security limits](docs/local-lab.md)
+- [ESP32 configuration and build](client/esp32/README.md)
+- [Hardware test status](docs/hardware-status.md)
+
+The software suite passes 26 checks covering DNSSEC validation, strict client
+policy, TLS certificate verification, TLS 1.2/1.3 compatibility and failure handling.
+Test outputs are under `results/`. Hardware results are recorded separately.
+Wi-Fi credentials, private keys and compiled firmware are excluded.
+
 ## Presentation
 
 [Read the proposal PDF](Team_LinkX_PS004_Proposal.pdf)

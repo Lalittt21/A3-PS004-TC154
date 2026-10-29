@@ -1,0 +1,102 @@
+[
+  {
+    "test": "Unavailable gateway refuses connection",
+    "status": "PASS",
+    "exit_code": 1,
+    "elapsed_seconds": 1.144,
+    "detail": {
+      "accepted": false,
+      "decision": "blocked: connection failed",
+      "error": "[Errno 111] Connection refused"
+    }
+  },
+  {
+    "test": "Stalled TLS handshake times out",
+    "status": "PASS",
+    "exit_code": 1,
+    "elapsed_seconds": 1.602,
+    "detail": {
+      "accepted": false,
+      "decision": "blocked: connection failed",
+      "error": "The DNS operation timed out."
+    }
+  },
+  {
+    "test": "Wrong identity blocks without plaintext fallback",
+    "status": "PASS",
+    "exit_code": 1,
+    "elapsed_seconds": 0.735,
+    "detail": {
+      "accepted": false,
+      "decision": "blocked: connection failed",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'wrong.test'. (_ssl.c:1081)"
+    }
+  },
+  {
+    "test": "Unsigned domain blocked at CLI",
+    "status": "PASS",
+    "exit_code": 2,
+    "elapsed_seconds": 1.199,
+    "detail": {
+      "name": "sensor.unsigned.trustgate.test",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "accepted": false,
+      "decision": "blocked: answer not DNSSEC-authenticated",
+      "addresses": [],
+      "answers": [],
+      "latency_ms": 71.654,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "Tampered domain blocked at CLI",
+    "status": "PASS",
+    "exit_code": 2,
+    "elapsed_seconds": 0.88,
+    "detail": {
+      "name": "tampered.trustgate.test",
+      "rcode": "SERVFAIL",
+      "authenticated_data": false,
+      "accepted": false,
+      "decision": "blocked: resolver failure (consult gateway logs for cause)",
+      "addresses": [],
+      "answers": [],
+      "latency_ms": 6.313,
+      "transport": "TLS with CA and hostname verification"
+    }
+  },
+  {
+    "test": "Invalid timeout rejected",
+    "status": "PASS",
+    "exit_code": 1,
+    "elapsed_seconds": 1.306,
+    "detail": {
+      "accepted": false,
+      "decision": "blocked: connection failed",
+      "error": "Port must be 1..65535 and timeout must be positive and finite"
+    }
+  },
+  {
+    "test": "Fresh request succeeds after failed requests",
+    "status": "PASS",
+    "exit_code": 0,
+    "elapsed_seconds": 1.4,
+    "detail": {
+      "name": "sensor.trustgate.test",
+      "rcode": "NOERROR",
+      "authenticated_data": true,
+      "accepted": true,
+      "decision": "accepted",
+      "addresses": [
+        "192.0.2.10"
+      ],
+      "answers": [
+        "sensor.trustgate.test. 47 IN A 192.0.2.10",
+        "sensor.trustgate.test. 47 IN RRSIG A 13 3 60 20261128130152 20261029130152 60223 trustgate.test. wapc8Y/AoQM8s7RPwU+uGNMrYv7RUaLr 1gtxwDBSpX8oGLH7YGHfZqxqGMBqKOaO pv+1WDQQ7OjNtMHDZq+3sg=="
+      ],
+      "latency_ms": 136.406,
+      "transport": "TLS with CA and hostname verification"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "test": "Valid signed answer",
+    "status": "PASS",
+    "rcode": "NOERROR",
+    "authenticated_data": true,
+    "addresses": [
+      "192.0.2.10"
+    ]
+  },
+  {
+    "test": "Authenticated nonexistent name",
+    "status": "PASS",
+    "rcode": "NXDOMAIN",
+    "authenticated_data": true,
+    "addresses": []
+  },
+  {
+    "test": "Authority serves corrupted test address",
+    "status": "PASS",
+    "rcode": "NOERROR",
+    "authenticated_data": false,
+    "addresses": [
+      "192.0.2.99"
+    ]
+  },
+  {
+    "test": "Gateway rejects corrupted signature",
+    "status": "PASS",
+    "rcode": "SERVFAIL",
+    "authenticated_data": false,
+    "addresses": []
+  },
+  {
+    "test": "Diagnostic CD control retrieves same corrupted record",
+    "status": "PASS",
+    "rcode": "NOERROR",
+    "authenticated_data": false,
+    "addresses": [
+      "192.0.2.99"
+    ]
+  },
+  {
+    "test": "Gateway still rejects after CD control",
+    "status": "PASS",
+    "rcode": "SERVFAIL",
+    "authenticated_data": false,
+    "addresses": []
+  }
+]

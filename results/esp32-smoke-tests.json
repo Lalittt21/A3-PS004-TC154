@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-29T14:03:43.968632+00:00",
+  "board": "ESP32-D0WD-V3 rev 3.1",
+  "gateway": "Unbound 1.26.2",
+  "transport": "DNS over TLS; firmware verifies provisioned CA and gateway hostname",
+  "scenarios": [
+    {
+      "query": "sensor.trustgate.test",
+      "expected_observed": "ACCEPT 192.0.2.10",
+      "status": "PASS"
+    },
+    {
+      "query": "sensor.unsigned.trustgate.test",
+      "expected_observed": "BLOCK no authenticated-data flag",
+      "status": "PASS"
+    },
+    {
+      "query": "tampered.trustgate.test",
+      "expected_observed": "BLOCK DNS rcode=2",
+      "status": "PASS"
+    },
+    {
+      "query": "missing.trustgate.test",
+      "expected_observed": "BLOCK DNS rcode=3",
+      "status": "PASS"
+    }
+  ],
+  "limits": [
+    "Controlled local DNSSEC trust anchor",
+    "USB-provisioned clock",
+    "No hardware impostor-certificate test yet",
+    "Single-session observations; not performance benchmarks"
+  ]
+}
