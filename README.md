@@ -13,13 +13,25 @@
 
 Small IoT devices have limited processing power and memory. DNSSEC validation adds resource costs, while forged DNS responses can redirect devices to incorrect destinations. The challenge is to delegate validation to a trusted gateway and secure the client-to-gateway connection.
 
-## Proposed solution
+## Implemented prototype
 
-Our proposed design uses one lightweight IoT client and one local DNSSEC-validating gateway running Unbound. The client authenticates the gateway over DNS over TLS. The gateway validates DNS data against a configured trust anchor and rejects bogus answers.
+Our prototype uses an ESP32 client and a local DNSSEC-validating gateway running Unbound. The client authenticates the gateway over DNS over TLS. The gateway validates DNS data against a configured trust anchor and rejects bogus answers.
 
-The controlled lab will test valid signed data, an authenticated unsigned delegation, invalid signatures and an untrusted gateway certificate. Unsigned data is distinct from bogus data; the proposed strict client policy blocks unsigned answers.
+The controlled lab tests valid signed data, an authenticated unsigned delegation, invalid signatures and untrusted or wrong-hostname gateway certificates. Unsigned data is distinct from bogus data; the strict client policy blocks unsigned answers.
 
 The client relies on the trusted gateway. It does not independently perform end-to-end DNSSEC validation. A compromised trusted gateway remains a limitation.
+
+## Evaluator starting point
+
+- [Implementation report (PDF)](output/pdf/TrustGateIoT-Implementation-Report.pdf)
+- [Demo walkthrough and architecture](docs/demo-walkthrough.md)
+- [Submission status and mentoring guidance](docs/submission-checklist.md)
+- [Download review package](deliverables/TrustGateIoT-Level2.zip)
+
+The package is for local reproduction and review, not a hosted live service.
+A final working-demo video has not yet been linked. The introduction video below
+describes the proposal. Current hardware evidence includes a 31 October run with
+59 accepted requests and one startup block in 60 attempts; every attempt is saved.
 
 ## Prototype code
 

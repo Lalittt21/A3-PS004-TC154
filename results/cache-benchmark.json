@@ -1,0 +1,265 @@
+{
+  "recorded_at": "2026-10-31T11:01:37.990065+00:00",
+  "method": "20 isolated Unbound instances. First DNS request has an empty resolver cache; second request is immediate and warm. Both use fresh authenticated TLS connections. BIND authoritative server stays running.",
+  "limits": [
+    "Laptop/WSL client and gateway, not ESP32.",
+    "No TLS-session reuse, CPU/energy measurement or client-side DNSSEC baseline.",
+    "Failures remain in samples and are excluded only from successful-latency summaries."
+  ],
+  "samples": [
+    {
+      "pair": 1,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 140.433
+    },
+    {
+      "pair": 1,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 4.958
+    },
+    {
+      "pair": 2,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.527
+    },
+    {
+      "pair": 2,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.245
+    },
+    {
+      "pair": 3,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.009
+    },
+    {
+      "pair": 3,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 3.272
+    },
+    {
+      "pair": 4,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.298
+    },
+    {
+      "pair": 4,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.241
+    },
+    {
+      "pair": 5,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 6.849
+    },
+    {
+      "pair": 5,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.407
+    },
+    {
+      "pair": 6,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.887
+    },
+    {
+      "pair": 6,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.96
+    },
+    {
+      "pair": 7,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 8.544
+    },
+    {
+      "pair": 7,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.092
+    },
+    {
+      "pair": 8,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.404
+    },
+    {
+      "pair": 8,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.536
+    },
+    {
+      "pair": 9,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 6.346
+    },
+    {
+      "pair": 9,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.2
+    },
+    {
+      "pair": 10,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.373
+    },
+    {
+      "pair": 10,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.627
+    },
+    {
+      "pair": 11,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 5.509
+    },
+    {
+      "pair": 11,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 3.148
+    },
+    {
+      "pair": 12,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 4.831
+    },
+    {
+      "pair": 12,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 3.682
+    },
+    {
+      "pair": 13,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 6.045
+    },
+    {
+      "pair": 13,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.273
+    },
+    {
+      "pair": 14,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.01
+    },
+    {
+      "pair": 14,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.059
+    },
+    {
+      "pair": 15,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 5.427
+    },
+    {
+      "pair": 15,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.048
+    },
+    {
+      "pair": 16,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 4.811
+    },
+    {
+      "pair": 16,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 3.163
+    },
+    {
+      "pair": 17,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 6.555
+    },
+    {
+      "pair": 17,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.254
+    },
+    {
+      "pair": 18,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 5.862
+    },
+    {
+      "pair": 18,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 1.99
+    },
+    {
+      "pair": 19,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 8.326
+    },
+    {
+      "pair": 19,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.618
+    },
+    {
+      "pair": 20,
+      "cache": "cold",
+      "accepted": true,
+      "latency_ms": 7.849
+    },
+    {
+      "pair": 20,
+      "cache": "warm",
+      "accepted": true,
+      "latency_ms": 2.494
+    }
+  ],
+  "summary": {
+    "cold": {
+      "attempts": 20,
+      "accepted": 20,
+      "median_ms": 7.0095,
+      "max_ms": 140.433
+    },
+    "warm": {
+      "attempts": 20,
+      "accepted": 20,
+      "median_ms": 2.4505,
+      "max_ms": 4.958
+    }
+  }
+}

@@ -4,3 +4,7 @@
 *.md text eol=lf
 *.conf text eol=lf
 *.zone text eol=lf
+
+*.pdf binary
+*.zip binary
+*.png binary

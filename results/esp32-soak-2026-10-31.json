@@ -1,0 +1,434 @@
+{
+  "started_at": "2026-10-31T11:04:17.547584+00:00",
+  "completed": true,
+  "method": "60 fixed valid-fixture requests, 2-second pause, fresh TLS each time, modem sleep disabled, no automatic query retries; startup attempts included.",
+  "limits": [
+    "Shared Wi-Fi, not a controlled network.",
+    "No energy or independent client DNSSEC baseline."
+  ],
+  "samples": [
+    {
+      "attempt": 1,
+      "accepted": false,
+      "elapsed_ms": null,
+      "decision": "BLOCK Wi-Fi or clock not ready",
+      "board_reset": false
+    },
+    {
+      "attempt": 2,
+      "accepted": true,
+      "elapsed_ms": 913,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 3,
+      "accepted": true,
+      "elapsed_ms": 779,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 4,
+      "accepted": true,
+      "elapsed_ms": 1078,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 5,
+      "accepted": true,
+      "elapsed_ms": 854,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 6,
+      "accepted": true,
+      "elapsed_ms": 756,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 7,
+      "accepted": true,
+      "elapsed_ms": 780,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 8,
+      "accepted": true,
+      "elapsed_ms": 753,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 9,
+      "accepted": true,
+      "elapsed_ms": 750,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 10,
+      "accepted": true,
+      "elapsed_ms": 761,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 11,
+      "accepted": true,
+      "elapsed_ms": 883,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 12,
+      "accepted": true,
+      "elapsed_ms": 766,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 13,
+      "accepted": true,
+      "elapsed_ms": 725,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 14,
+      "accepted": true,
+      "elapsed_ms": 723,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 15,
+      "accepted": true,
+      "elapsed_ms": 726,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 16,
+      "accepted": true,
+      "elapsed_ms": 881,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 17,
+      "accepted": true,
+      "elapsed_ms": 708,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 18,
+      "accepted": true,
+      "elapsed_ms": 721,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 19,
+      "accepted": true,
+      "elapsed_ms": 712,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 20,
+      "accepted": true,
+      "elapsed_ms": 763,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 21,
+      "accepted": true,
+      "elapsed_ms": 725,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 22,
+      "accepted": true,
+      "elapsed_ms": 716,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 23,
+      "accepted": true,
+      "elapsed_ms": 736,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 24,
+      "accepted": true,
+      "elapsed_ms": 725,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 25,
+      "accepted": true,
+      "elapsed_ms": 742,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 26,
+      "accepted": true,
+      "elapsed_ms": 728,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 27,
+      "accepted": true,
+      "elapsed_ms": 755,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 28,
+      "accepted": true,
+      "elapsed_ms": 734,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 29,
+      "accepted": true,
+      "elapsed_ms": 717,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 30,
+      "accepted": true,
+      "elapsed_ms": 742,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 31,
+      "accepted": true,
+      "elapsed_ms": 793,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 32,
+      "accepted": true,
+      "elapsed_ms": 859,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 33,
+      "accepted": true,
+      "elapsed_ms": 753,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 34,
+      "accepted": true,
+      "elapsed_ms": 807,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 35,
+      "accepted": true,
+      "elapsed_ms": 777,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 36,
+      "accepted": true,
+      "elapsed_ms": 712,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 37,
+      "accepted": true,
+      "elapsed_ms": 920,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 38,
+      "accepted": true,
+      "elapsed_ms": 726,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 39,
+      "accepted": true,
+      "elapsed_ms": 710,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 40,
+      "accepted": true,
+      "elapsed_ms": 725,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 41,
+      "accepted": true,
+      "elapsed_ms": 736,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 42,
+      "accepted": true,
+      "elapsed_ms": 719,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 43,
+      "accepted": true,
+      "elapsed_ms": 712,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 44,
+      "accepted": true,
+      "elapsed_ms": 763,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 45,
+      "accepted": true,
+      "elapsed_ms": 791,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 46,
+      "accepted": true,
+      "elapsed_ms": 731,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 47,
+      "accepted": true,
+      "elapsed_ms": 722,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 48,
+      "accepted": true,
+      "elapsed_ms": 747,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 49,
+      "accepted": true,
+      "elapsed_ms": 706,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 50,
+      "accepted": true,
+      "elapsed_ms": 736,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 51,
+      "accepted": true,
+      "elapsed_ms": 733,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 52,
+      "accepted": true,
+      "elapsed_ms": 719,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 53,
+      "accepted": true,
+      "elapsed_ms": 745,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 54,
+      "accepted": true,
+      "elapsed_ms": 888,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 55,
+      "accepted": true,
+      "elapsed_ms": 720,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 56,
+      "accepted": true,
+      "elapsed_ms": 757,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 57,
+      "accepted": true,
+      "elapsed_ms": 728,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 58,
+      "accepted": true,
+      "elapsed_ms": 748,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 59,
+      "accepted": true,
+      "elapsed_ms": 718,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    },
+    {
+      "attempt": 60,
+      "accepted": true,
+      "elapsed_ms": 710,
+      "decision": "ACCEPT 192.0.2.10",
+      "board_reset": false
+    }
+  ],
+  "duration_seconds": 166.78,
+  "accepted": 59,
+  "failed": 1
+}

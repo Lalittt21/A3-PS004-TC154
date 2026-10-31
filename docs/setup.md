@@ -34,6 +34,29 @@ local DNSSEC fixtures, not a validation chain from the public root.
 
 ## ESP32 and Windows forwarding
 
+Before each session run `powershell -File scripts/network-preflight.ps1` and
+read the ESP32 serial IP. DHCP can change both laptop and board addresses.
+Update local files without displaying credentials:
+
+```powershell
+python scripts/configure-network.py --laptop 192.168.88.17 --wsl 172.25.142.176 --board 192.168.88.18 --subnet 172.25.128.0/20
+```
+
+These are the addresses observed on 31 October, not permanent defaults. Substitute
+the current addresses. Restart the lab and rerun the administrator forwarding
+script with matching addresses. Rebuild/reflash whenever the gateway IP changes.
+The preflight reads source settings; it cannot prove what is flashed on the board.
+
+If WSL cannot overwrite a Windows build output, build in Ubuntu's private cache:
+
+```bash
+PLATFORMIO_BUILD_DIR="$HOME/.cache/trustgate-firmware-build" .venv/bin/pio run -d client/esp32
+```
+
+Only flash after the build reports SUCCESS. The binary is under that directory's
+esp32dev folder and contains credentials. A failed upload is not a usable board;
+retry only after checking USB connectivity and require a verified write hash.
+
 Follow `client/esp32/README.md` to create the ignored Wi-Fi configuration and
 public CA header. Install PlatformIO into the venv before building:
 
@@ -82,4 +105,6 @@ structured result is written only after all phases pass.
 
 Repeated failure/recovery testing, intermittent timeout diagnosis,
 controlled performance benchmarks and production provisioning remain separate
-tasks. Single-query serial timings are diagnostic observations, not benchmarks.
+tasks. See docs/submission-checklist.md for the final deliverable review and
+docs/demo-walkthrough.md for the recording sequence. Initial measurements are
+documented in docs/reliability-and-measurements.md; they are not energy savings.

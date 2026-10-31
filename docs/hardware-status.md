@@ -1,5 +1,13 @@
 # ESP32 hardware status
 
+31 October update: the laptop and ESP32 DHCP addresses changed; configuration
+and the board-restricted firewall were updated. A fresh build was flashed with
+write-hash verification after resolving USB transfer failures by reconnecting.
+The subsequent 60-attempt run lasted 166.78 seconds: 59 valid answers accepted,
+one initial request blocked before Wi-Fi connected, and no subsequent failures.
+See results/esp32-soak-2026-10-31.json. This is a short shared-network run, not
+controlled-network or production reliability validation.
+
 Verified on 29 October 2026 with an ESP32-D0WD-V3 revision 3.1, 4 MB flash,
 Windows COM8 and Unbound 1.26.2 in Ubuntu/WSL.
 
