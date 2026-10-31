@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+<rect width="1800" height="1250" fill="#f8fafc"/>
+<text x="55" y="64" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="700" fill="#20364c">03 / ESP32 acceptance decision</text>
+<text x="55" y="107" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#20364c">Every check must pass before a DNS answer can be used | No plaintext fallback</text>
+<rect x="80" y="170" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="210" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Wi-Fi and clock ready?</text>
+<text x="100" y="245" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="170" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="210" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Wait / block query</text>
+<text x="1060" y="245" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">A valid clock is needed for certificate dates.</text>
+<polyline points="850,220 1040,220" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,220 1027.3937405670624,226.08951747755722 1027.3937405670624,213.91048252244278" fill="#a66839"/>
+<text x="925" y="202" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,270 465,315" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,315 458.91048252244275,302.39374056706254 471.08951747755725,302.39374056706254" fill="#078586"/>
+<text x="480" y="297" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="315" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="355" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Gateway TLS authentication succeeds?</text>
+<text x="100" y="390" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="315" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="355" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BLOCK connection</text>
+<text x="1060" y="390" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Reject invalid CA, hostname or certificate dates.</text>
+<polyline points="850,365 1040,365" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,365 1027.3937405670624,371.08951747755725 1027.3937405670624,358.91048252244275" fill="#a66839"/>
+<text x="925" y="347" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,415 465,460" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,460 458.91048252244275,447.39374056706254 471.08951747755725,447.39374056706254" fill="#078586"/>
+<text x="480" y="442" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="460" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Response structure and question match?</text>
+<text x="100" y="535" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="460" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BLOCK malformed response</text>
+<text x="1060" y="535" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Check framing, response ID and question consistency.</text>
+<polyline points="850,510 1040,510" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,510 1027.3937405670624,516.0895174775573 1027.3937405670624,503.91048252244275" fill="#a66839"/>
+<text x="925" y="492" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,560 465,605" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,605 458.91048252244275,592.3937405670625 471.08951747755725,592.3937405670625" fill="#078586"/>
+<text x="480" y="587" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="605" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="645" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">DNS response code is NOERROR?</text>
+<text x="100" y="680" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="605" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="645" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BLOCK destination use</text>
+<text x="1060" y="680" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">SERVFAIL: resolver failure. NXDOMAIN: missing name.</text>
+<polyline points="850,655 1040,655" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,655 1027.3937405670624,661.0895174775573 1027.3937405670624,648.9104825224427" fill="#a66839"/>
+<text x="925" y="637" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,705 465,750" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,750 458.91048252244275,737.3937405670625 471.08951747755725,737.3937405670625" fill="#078586"/>
+<text x="480" y="732" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="750" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="790" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Authenticated-data flag is set?</text>
+<text x="100" y="825" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="750" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="790" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BLOCK unsigned / unauthenticated answer</text>
+<text x="1060" y="825" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">AD must come from the authenticated gateway.</text>
+<polyline points="850,800 1040,800" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,800 1027.3937405670624,806.0895174775573 1027.3937405670624,793.9104825224427" fill="#a66839"/>
+<text x="925" y="782" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,850 465,895" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,895 458.91048252244275,882.3937405670625 471.08951747755725,882.3937405670625" fill="#078586"/>
+<text x="480" y="877" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="895" width="770" height="100" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="935" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Usable direct IPv4 A record present?</text>
+<text x="100" y="970" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Proceed only when this check passes.</text>
+<rect x="1040" y="895" width="680" height="100" rx="8" fill="#fff4ec" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1060" y="935" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BLOCK unsupported / missing answer</text>
+<text x="1060" y="970" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">CNAME chains are not supported in this prototype.</text>
+<polyline points="850,945 1040,945" fill="none" stroke="#a66839" stroke-width="4"/>
+<polygon points="1040,945 1027.3937405670624,951.0895174775573 1027.3937405670624,938.9104825224427" fill="#a66839"/>
+<text x="925" y="927" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#a66839">NO</text>
+<polyline points="465,995 465,1050" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="465,1050 458.91048252244275,1037.3937405670624 471.08951747755725,1037.3937405670624" fill="#078586"/>
+<text x="480" y="1026" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#087f83">YES</text>
+<rect x="80" y="1050" width="770" height="95" rx="8" fill="#e9f6f4" stroke="#cbd8e5" stroke-width="2"/>
+<text x="100" y="1090" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">ACCEPT authenticated IPv4 answer</text>
+<text x="100" y="1125" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Example fixture: sensor.trustgate.test -&gt; 192.0.2.10</text>
+<text x="80" y="1202" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">The gateway is trusted. A compromised trusted gateway remains outside this prototype&#x27;s protection.</text>
+</svg>

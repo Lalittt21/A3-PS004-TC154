@@ -7,7 +7,7 @@ The published Level 2 period ends 31 October; no precise cutoff time is stated.
 | --- | --- |
 | Step 8: mentoring | User attended and supplied takeaways; attendance records are not independently verified here. |
 | Step 9: source and supporting files | Source, setup instructions and dated test results are in the repository; final additions are in this submission update. |
-| Step 10: demonstration | Reproducible local lab, walkthrough and final deliverable files supplied. A final working-demo video/live URL is still to be provided. The published guideline allows final files when a live demo is unavailable; acceptance is the evaluator's decision. |
+| Step 10: demonstration | Reproducible local lab, walkthrough and final deliverable files supplied. Working-demo video: https://youtu.be/goqmzNNO4qs (added 1 November 2026). The published guideline allows final files when a live demo is unavailable; acceptance is the evaluator's decision. |
 | Initial proposal and introduction | Existing PDFs and introduction video retained. |
 | Collaborators / ownership | Earlier screenshot confirmed AIORI collaborator access; teammate acceptance and ownership transfer need current verification. Do not treat collaboration as ownership transfer. |
 
@@ -27,6 +27,6 @@ No raw transcript, attendee list or private meeting access token is included her
 
 ## Still requires the team
 
-Record and upload the final demonstration, verify the current ownership and
+The final demonstration is linked above. Verify the current ownership and
 collaborator status, and check any directly received organizer instructions.
 Do not claim full completion of eligibility steps until these are confirmed.

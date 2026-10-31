@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+<rect width="1800" height="1180" fill="#f5f8fc"/>
+<text x="50" y="71" font-family="Segoe UI,Arial,sans-serif" font-size="43" font-weight="700" fill="#15334e">TrustGate IoT</text>
+<text x="50" y="111" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400" fill="#20364c">Implemented prototype architecture | Team LinkX | AIORI Hackathon 3 - PS004</text>
+<rect x="400" y="150" width="1350" height="685" rx="20" fill="#e8eff7" stroke="#a4b9cd" stroke-width="2"/>
+<text x="425" y="185" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#335570">LAPTOP / WINDOWS HOST</text>
+<rect x="780" y="205" width="940" height="605" rx="16" fill="#e3f3f3" stroke="#87babc" stroke-width="2"/>
+<text x="805" y="237" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#087f83">UBUNTU / WSL</text>
+<rect x="50" y="280" width="300" height="280" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="72" y="329" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">ESP32 client</text>
+<text x="72" y="364" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">Constrained IoT device</text>
+<text x="72" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Joins configured Wi-Fi</text>
+<text x="72" y="443" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Checks gateway CA,</text>
+<text x="72" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">hostname and dates</text>
+<text x="72" y="509" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Requires AD + valid A</text>
+<text x="72" y="542" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">No plaintext fallback</text>
+<rect x="430" y="280" width="290" height="280" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="452" y="329" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">TCP forwarding</text>
+<text x="452" y="364" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">Windows | port 1853</text>
+<text x="452" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Board-only firewall rule</text>
+<text x="452" y="443" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Forwards TLS bytes</text>
+<text x="452" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">to the WSL address</text>
+<text x="452" y="509" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Does not decrypt TLS</text>
+<rect x="820" y="280" width="380" height="280" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="842" y="329" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">Unbound gateway</text>
+<text x="842" y="364" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">DNSSEC-validating resolver</text>
+<text x="842" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Terminates authenticated TLS</text>
+<text x="842" y="443" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Validates DNSSEC signatures</text>
+<text x="842" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Sets AD for secure answers</text>
+<text x="842" y="509" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Rejects bogus signed data</text>
+<text x="842" y="542" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Caches validated results</text>
+<rect x="1300" y="280" width="370" height="280" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1322" y="329" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">BIND test server</text>
+<text x="1322" y="364" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">Authoritative DNS fixtures</text>
+<text x="1322" y="410" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Local loopback port 15353</text>
+<text x="1322" y="443" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Valid signed record</text>
+<text x="1322" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Unsigned child delegation</text>
+<text x="1322" y="509" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Tampered signed record</text>
+<text x="1322" y="542" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Authenticated missing name</text>
+<polyline points="350,415 430,415" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="430,415 417.39374056706254,421.08951747755725 417.39374056706254,408.91048252244275" fill="#078586"/>
+<polygon points="350,415 362.60625943293746,408.91048252244275 362.60625943293746,421.08951747755725" fill="#078586"/>
+<text x="382" y="394" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#087f83">1</text>
+<polyline points="720,415 820,415" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="820,415 807.3937405670625,421.08951747755725 807.3937405670625,408.91048252244275" fill="#078586"/>
+<polygon points="720,415 732.6062594329375,408.91048252244275 732.6062594329375,421.08951747755725" fill="#078586"/>
+<text x="762" y="394" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#087f83">2</text>
+<polyline points="1200,415 1300,415" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="1300,415 1287.3937405670624,421.08951747755725 1287.3937405670624,408.91048252244275" fill="#078586"/>
+<polygon points="1200,415 1212.6062594329376,408.91048252244275 1212.6062594329376,421.08951747755725" fill="#078586"/>
+<text x="1242" y="394" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#087f83">3</text>
+<rect x="50" y="650" width="300" height="140" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="72" y="699" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">USB provisioning</text>
+<text x="72" y="734" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">Trusted operator</text>
+<text x="72" y="780" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Supplies the device clock</text>
+<polyline points="200,650 200,560" fill="none" stroke="#70859a" stroke-width="4"/>
+<polygon points="200,560 206.08951747755722,572.6062594329375 193.91048252244278,572.6062594329375" fill="#70859a"/>
+<rect x="820" y="650" width="380" height="145" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="842" y="699" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">Local trust anchor</text>
+<text x="842" y="734" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">Configured DNSSEC public key</text>
+<text x="842" y="780" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Private lab trust, not root DNS</text>
+<polyline points="1010,650 1010,560" fill="none" stroke="#70859a" stroke-width="4"/>
+<polygon points="1010,560 1016.0895174775573,572.6062594329375 1003.9104825224427,572.6062594329375" fill="#70859a"/>
+<rect x="1300" y="650" width="370" height="145" rx="15" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1322" y="699" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#20364c">Local diagnostics</text>
+<text x="1322" y="734" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">dig / software tests</text>
+<text x="1322" y="780" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Unbound loopback port 1053</text>
+<polyline points="1300,704 1240,704 1240,530 1200,530" fill="none" stroke="#70859a" stroke-width="4"/>
+<polygon points="1200,530 1212.6062594329376,523.9104825224427 1212.6062594329376,536.0895174775573" fill="#70859a"/>
+<text x="435" y="626" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#20364c">TLS server authentication only;</text>
+<text x="435" y="656" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#20364c">no client certificate required.</text>
+<text x="50" y="879" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#087f83">DATA FLOW</text>
+<text x="50" y="923" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#20364c">1  DNS over TLS on Wi-Fi</text>
+<text x="50" y="956" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">ESP32 authenticates the gateway.</text>
+<text x="630" y="923" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#20364c">2  Encrypted forwarding</text>
+<text x="630" y="956" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Windows forwards TCP 1853 into WSL.</text>
+<text x="1230" y="923" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#20364c">3  Local DNS queries</text>
+<text x="1230" y="956" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Unbound queries BIND on 15353.</text>
+<rect x="50" y="995" width="1700" height="135" rx="15" fill="#15334e" stroke="#15334e" stroke-width="2"/>
+<text x="75" y="1034" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#6ee1d3">CLIENT DECISION</text>
+<text x="75" y="1075" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#ffffff">Valid signed answer: ACCEPT  |  Unsigned: BLOCK by policy  |  Bogus: SERVFAIL  |  Missing name: NXDOMAIN</text>
+<text x="75" y="1111" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#cbdce9">Trust boundary: the ESP32 relies on the authenticated gateway. A compromised trusted gateway remains a limitation.</text>
+</svg>

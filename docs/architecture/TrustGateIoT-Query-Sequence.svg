@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+<rect width="1800" height="1180" fill="#f8fafc"/>
+<text x="55" y="64" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="700" fill="#20364c">02 / Query sequence</text>
+<text x="55" y="107" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#20364c">Cold-cache path | TLS authenticates the gateway; Unbound validates the DNS data</text>
+<rect x="50" y="150" width="360" height="100" rx="8" fill="#edf4f8" stroke="#cbd8e5" stroke-width="2"/>
+<text x="70" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">ESP32</text>
+<text x="70" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Client policy</text>
+<line x1="230" y1="250" x2="230" y2="260" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="270" x2="230" y2="280" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="290" x2="230" y2="300" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="310" x2="230" y2="320" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="330" x2="230" y2="340" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="350" x2="230" y2="360" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="370" x2="230" y2="380" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="390" x2="230" y2="400" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="410" x2="230" y2="420" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="430" x2="230" y2="440" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="450" x2="230" y2="460" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="470" x2="230" y2="480" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="490" x2="230" y2="500" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="510" x2="230" y2="520" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="530" x2="230" y2="540" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="550" x2="230" y2="560" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="570" x2="230" y2="580" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="590" x2="230" y2="600" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="610" x2="230" y2="620" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="630" x2="230" y2="640" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="650" x2="230" y2="660" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="670" x2="230" y2="680" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="690" x2="230" y2="700" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="710" x2="230" y2="720" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="730" x2="230" y2="740" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="750" x2="230" y2="760" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="770" x2="230" y2="780" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="790" x2="230" y2="800" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="810" x2="230" y2="820" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="830" x2="230" y2="840" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="850" x2="230" y2="860" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="870" x2="230" y2="880" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="890" x2="230" y2="900" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="910" x2="230" y2="920" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="930" x2="230" y2="940" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="950" x2="230" y2="960" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="230" y1="970" x2="230" y2="980" stroke="#a8b8c8" stroke-width="2"/>
+<rect x="670" y="150" width="360" height="100" rx="8" fill="#edf4f8" stroke="#cbd8e5" stroke-width="2"/>
+<text x="690" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Unbound</text>
+<text x="690" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Gateway in Ubuntu / WSL</text>
+<line x1="850" y1="250" x2="850" y2="260" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="270" x2="850" y2="280" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="290" x2="850" y2="300" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="310" x2="850" y2="320" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="330" x2="850" y2="340" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="350" x2="850" y2="360" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="370" x2="850" y2="380" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="390" x2="850" y2="400" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="410" x2="850" y2="420" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="430" x2="850" y2="440" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="450" x2="850" y2="460" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="470" x2="850" y2="480" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="490" x2="850" y2="500" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="510" x2="850" y2="520" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="530" x2="850" y2="540" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="550" x2="850" y2="560" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="570" x2="850" y2="580" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="590" x2="850" y2="600" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="610" x2="850" y2="620" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="630" x2="850" y2="640" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="650" x2="850" y2="660" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="670" x2="850" y2="680" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="690" x2="850" y2="700" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="710" x2="850" y2="720" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="730" x2="850" y2="740" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="750" x2="850" y2="760" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="770" x2="850" y2="780" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="790" x2="850" y2="800" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="810" x2="850" y2="820" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="830" x2="850" y2="840" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="850" x2="850" y2="860" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="870" x2="850" y2="880" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="890" x2="850" y2="900" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="910" x2="850" y2="920" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="930" x2="850" y2="940" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="950" x2="850" y2="960" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="850" y1="970" x2="850" y2="980" stroke="#a8b8c8" stroke-width="2"/>
+<rect x="1270" y="150" width="360" height="100" rx="8" fill="#edf4f8" stroke="#cbd8e5" stroke-width="2"/>
+<text x="1290" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">BIND</text>
+<text x="1290" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Authoritative local test zones</text>
+<line x1="1450" y1="250" x2="1450" y2="260" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="270" x2="1450" y2="280" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="290" x2="1450" y2="300" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="310" x2="1450" y2="320" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="330" x2="1450" y2="340" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="350" x2="1450" y2="360" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="370" x2="1450" y2="380" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="390" x2="1450" y2="400" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="410" x2="1450" y2="420" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="430" x2="1450" y2="440" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="450" x2="1450" y2="460" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="470" x2="1450" y2="480" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="490" x2="1450" y2="500" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="510" x2="1450" y2="520" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="530" x2="1450" y2="540" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="550" x2="1450" y2="560" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="570" x2="1450" y2="580" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="590" x2="1450" y2="600" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="610" x2="1450" y2="620" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="630" x2="1450" y2="640" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="650" x2="1450" y2="660" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="670" x2="1450" y2="680" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="690" x2="1450" y2="700" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="710" x2="1450" y2="720" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="730" x2="1450" y2="740" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="750" x2="1450" y2="760" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="770" x2="1450" y2="780" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="790" x2="1450" y2="800" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="810" x2="1450" y2="820" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="830" x2="1450" y2="840" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="850" x2="1450" y2="860" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="870" x2="1450" y2="880" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="890" x2="1450" y2="900" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="910" x2="1450" y2="920" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="930" x2="1450" y2="940" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="950" x2="1450" y2="960" stroke="#a8b8c8" stroke-width="2"/>
+<line x1="1450" y1="970" x2="1450" y2="980" stroke="#a8b8c8" stroke-width="2"/>
+<text x="260" y="288" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">1. Establish DNS-over-TLS connection</text>
+<polyline points="230,300 850,300" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="850,300 837.3937405670625,306.08951747755725 837.3937405670625,293.91048252244275" fill="#078586"/>
+<text x="260" y="358" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">2. Present gateway certificate during TLS handshake</text>
+<polyline points="850,370 230,370" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="230,370 242.60625943293746,363.91048252244275 242.60625943293746,376.08951747755725" fill="#078586"/>
+<rect x="50" y="395" width="490" height="82" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="70" y="435" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Client checks</text>
+<text x="70" y="470" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Trusted CA, hostname and certificate dates</text>
+<text x="260" y="508" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">3. Send DNS question over authenticated TLS</text>
+<polyline points="230,520 850,520" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="850,520 837.3937405670625,526.0895174775573 837.3937405670625,513.9104825224427" fill="#078586"/>
+<text x="880" y="578" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">4. Query local zone (cache miss)</text>
+<polyline points="850,590 1450,590" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="1450,590 1437.3937405670624,596.0895174775573 1437.3937405670624,583.9104825224427" fill="#078586"/>
+<text x="880" y="648" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">5. Return DNS records and DNSSEC material</text>
+<polyline points="1450,660 850,660" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="850,660 862.6062594329375,653.9104825224427 862.6062594329375,666.0895174775573" fill="#078586"/>
+<rect x="650" y="690" width="540" height="110" rx="8" fill="#e9f6f4" stroke="#cbd8e5" stroke-width="2"/>
+<text x="670" y="730" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Gateway validates</text>
+<text x="670" y="765" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Check signatures against the local trust anchor.</text>
+<text x="670" y="794" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Set AD for secure data; reject bogus data.</text>
+<text x="260" y="838" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">6. Return DNS response over the same TLS connection</text>
+<polyline points="850,850 230,850" fill="none" stroke="#078586" stroke-width="4"/>
+<polygon points="230,850 242.60625943293746,843.9104825224427 242.60625943293746,856.0895174775573" fill="#078586"/>
+<rect x="50" y="880" width="590" height="110" rx="8" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="70" y="920" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#20364c">Client applies its acceptance policy</text>
+<text x="70" y="955" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Check response structure, question, RCODE and AD.</text>
+<text x="70" y="984" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#20364c">Accept only a usable direct IPv4 A answer.</text>
+<rect x="55" y="1030" width="1690" height="100" rx="8" fill="#edf4f8" stroke="#cbd8e5" stroke-width="2"/>
+<text x="75" y="1067" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" fill="#20364c">Transport and trust notes</text>
+<text x="75" y="1104" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#20364c">Windows forwards TCP 1853 without decrypting TLS. A warm cache can avoid the BIND query. No client certificate is used.</text>
+</svg>

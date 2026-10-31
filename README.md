@@ -28,10 +28,44 @@ The client relies on the trusted gateway. It does not independently perform end-
 - [Submission status and mentoring guidance](docs/submission-checklist.md)
 - [Download review package](deliverables/TrustGateIoT-Level2.zip)
 
-The package is for local reproduction and review, not a hosted live service.
-A final working-demo video has not yet been linked. The introduction video below
-describes the proposal. Current hardware evidence includes a 31 October run with
+The package is the 31 October review snapshot for local reproduction, not a hosted
+live service. The latest demo link and diagrams are in the repository below.
+The working demonstration is linked below; the introduction video describes
+the original proposal. Current hardware evidence includes a 31 October run with
 59 accepted requests and one startup block in 60 attempts; every attempt is saved.
+
+## Working demo and architecture
+
+[Watch the TrustGate IoT working demonstration on YouTube](https://youtu.be/goqmzNNO4qs)
+
+Presented by Lalit Kumar on behalf of Team LinkX and teammate Sujitha V.
+The demonstration covers ESP32 connectivity, DNSSEC validation, gateway
+certificate rejection, recovery and recorded test evidence.
+
+### System overview
+
+![TrustGate IoT system architecture](docs/architecture/TrustGateIoT-Architecture.png)
+
+<details>
+<summary>Explore the query sequence</summary>
+
+![DNS-over-TLS query and DNSSEC validation sequence](docs/architecture/TrustGateIoT-Query-Sequence.png)
+
+</details>
+
+<details>
+<summary>Explore the ESP32 acceptance policy</summary>
+
+![ESP32 acceptance and rejection decision flow](docs/architecture/TrustGateIoT-Client-Decision.png)
+
+</details>
+
+[Architecture notes and Mermaid source](docs/architecture/architecture.md) ·
+[Tabbed viewer with zoom controls](docs/architecture/Architecture-Review.html)
+
+To use the tabbed viewer, download or clone the repository and open the HTML file
+in a browser. GitHub displays HTML source rather than running this viewer.
+PNG and editable SVG diagrams are included in the same folder.
 
 ## Prototype code
 
